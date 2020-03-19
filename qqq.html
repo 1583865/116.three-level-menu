@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul class="a">
+    <li>手机
+        <ul class="b">
+            <li>小米</li>
+            <li>华为</li>
+            <li>oppo</li>
+            <li>荣耀</li>
+            <ul class="c">
+                <li>2000元</li>
+                <li>2000元</li>
+                <li>2600元</li>
+                <li>3000元</li>
+            </ul>
+
+        </ul>
+    <script src="jquery-1.8.3.js"></script>
+    <script>
+        $(function(){
+            $(".a").mouseover(function(){
+                $(".b").show();
+            })
+        })
+                $(".a").mouseout(function(){
+                    $(".b").hide();
+                })
+
+
+                        $(".b").mouseover(function(){
+                            $(".c").show();
+                        })
+            $(".b").mouseout(function(){
+                $(".c").hide();
+            })
+
+                </script>
+
+
+
+
+</body>
+</html>
